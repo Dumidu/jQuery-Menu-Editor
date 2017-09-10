@@ -1072,7 +1072,7 @@ function MenuEditor(idSelector, settings) {
             var isParent = (typeof (v.children) !== "undefined") && ($.isArray(v.children));
             var $li = $('<li>');
             $li.attr('id', v.text);
-            $li.addClass('list-group-item').data('text', v.text).data('icon', v.icon).data('href', v.href);
+            $li.addClass('list-group-item').data('text', v.text).data('icon', v.icon).data('href', v.href).data('target', v.target).data('title', v.title);
             var $div = $('<div>');
             var $i = $('<i>').addClass(v.icon);
             var $span = $('<span>').addClass('txt').append(v.text);
